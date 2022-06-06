@@ -9,6 +9,13 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
+    @IBOutlet weak var ownerNameLabel: UILabel!
+    @IBOutlet weak var ownerImageView: UIImageView!
+    @IBOutlet weak var repositoryNameLabel: UILabel!
+    @IBOutlet weak var repositoryDescriptionLabel: UILabel!
+    @IBOutlet weak var starCountLabel: UILabel!
+    @IBOutlet weak var languageLabel: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

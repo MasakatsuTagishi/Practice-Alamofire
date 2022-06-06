@@ -47,6 +47,10 @@
                             <constraint firstItem="wWX-Rv-bLG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qe6-oK-qp7"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="searchBar" destination="Ph8-Wk-t8G" id="eNx-Ak-ZNi"/>
+                        <outlet property="tableView" destination="wWX-Rv-bLG" id="BoQ-IP-hwi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
