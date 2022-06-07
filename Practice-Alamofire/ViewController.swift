@@ -60,6 +60,13 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let webView = self.storyboard?.instantiateViewController(withIdentifier: "WebView") as! WebViewController
+        let url = repositories[indexPath.row].owner.htmlUrl
+        webView.url = url
+        self.present(webView, animated: true, completion: nil)
+    }
+
 }
 
 extension ViewController: UISearchBarDelegate {

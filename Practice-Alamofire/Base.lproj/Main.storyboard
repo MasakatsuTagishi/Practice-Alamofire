@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BmR-CJ-aUn">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -17,11 +17,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Ph8-Wk-t8G">
-                                <rect key="frame" x="0.0" y="44" width="414" height="51"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="51"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wWX-Rv-bLG">
-                                <rect key="frame" x="0.0" y="95" width="414" height="801"/>
+                                <rect key="frame" x="0.0" y="139" width="414" height="757"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -37,14 +37,69 @@
                             <constraint firstItem="wWX-Rv-bLG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qe6-oK-qp7"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ew4-Vc-Yo4"/>
                     <connections>
                         <outlet property="searchBar" destination="Ph8-Wk-t8G" id="eNx-Ak-ZNi"/>
                         <outlet property="tableView" destination="wWX-Rv-bLG" id="BoQ-IP-hwi"/>
+                        <segue destination="Gae-UB-1fL" kind="show" id="IWd-i2-CkE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="84" y="99"/>
+            <point key="canvasLocation" x="992.75362318840587" y="98.4375"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="bKF-zt-u9N">
+            <objects>
+                <viewController storyboardIdentifier="WebView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Gae-UB-1fL" customClass="WebViewController" customModule="Practice_Alamofire" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eec-qR-YgL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EYC-0F-y4n">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="V6y-aJ-MAb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="V6y-aJ-MAb" firstAttribute="trailing" secondItem="EYC-0F-y4n" secondAttribute="trailing" id="1OZ-8E-oCn"/>
+                            <constraint firstItem="EYC-0F-y4n" firstAttribute="top" secondItem="V6y-aJ-MAb" secondAttribute="top" id="AEM-0w-Pw0"/>
+                            <constraint firstItem="EYC-0F-y4n" firstAttribute="leading" secondItem="V6y-aJ-MAb" secondAttribute="leading" id="JsT-mp-a3G"/>
+                            <constraint firstItem="V6y-aJ-MAb" firstAttribute="bottom" secondItem="EYC-0F-y4n" secondAttribute="bottom" id="TvI-Gt-1Mo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gng-Tw-u5s"/>
+                    <connections>
+                        <outlet property="webView" destination="EYC-0F-y4n" id="pyW-ZX-jV7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GZ2-4w-Krm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1820" y="98"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kZh-0e-iae">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BmR-CJ-aUn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Zg-r1-oU7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="MoW-DQ-GVH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f8z-E0-geO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="122" y="98"/>
         </scene>
     </scenes>
     <resources>
