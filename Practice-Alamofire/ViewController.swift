@@ -72,6 +72,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 extension ViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         getArticles(word: searchBar.text ?? "")
+        searchBar.resignFirstResponder()
+
     }
 
 }
