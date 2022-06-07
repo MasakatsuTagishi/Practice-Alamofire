@@ -53,24 +53,24 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="hRv-bf-bsP">
-                                <rect key="frame" x="0.0" y="58" width="310" height="17.5"/>
+                                <rect key="frame" x="0.0" y="58" width="310" height="20.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKU-nJ-3mg">
-                                        <rect key="frame" x="0.0" y="0.0" width="310" height="17.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKU-nJ-3mg">
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="20.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="YKU-nJ-3mg" firstAttribute="height" secondItem="hRv-bf-bsP" secondAttribute="height" id="fq2-TD-JDu"/>
+                                    <constraint firstAttribute="height" constant="20.5" id="nEP-84-KJm"/>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HDc-uN-dLy">
-                                <rect key="frame" x="0.0" y="83.5" width="310" height="17.5"/>
+                                <rect key="frame" x="0.0" y="86.5" width="310" height="14.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HW9-hO-Rkl">
-                                        <rect key="frame" x="0.0" y="0.0" width="310" height="17.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="310" height="14.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -120,7 +120,7 @@
                             </stackView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="HDc-uN-dLy" firstAttribute="height" secondItem="hRv-bf-bsP" secondAttribute="height" id="fAf-FF-Y5m"/>
+                            <constraint firstItem="Ch6-A5-IB3" firstAttribute="top" secondItem="Oud-yf-AFy" secondAttribute="top" id="LWn-Lo-gbu"/>
                         </constraints>
                     </stackView>
                 </subviews>
