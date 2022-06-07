@@ -23,7 +23,7 @@ https://user-images.githubusercontent.com/83049586/172304446-cb4129b8-a834-4e1f-
   ```swift
   tableView.dataSource = self
   ```  
-  dataSourceをつけ忘れに気づきませんでした。反省...
+  dataSourceのつけ忘れに気づきませんでした。反省...
 ## 参考にした記事
 - [Alamofire](https://github.com/Alamofire/Alamofire)
 - [GithubAPIでリポジトリをカスタムセルで、一覧表示させてみた](https://qiita.com/SHOBLOG/items/5083e43558581cbf0dee)
