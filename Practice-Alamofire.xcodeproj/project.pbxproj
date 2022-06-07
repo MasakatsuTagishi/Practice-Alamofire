@@ -18,6 +18,7 @@
 		073C8579284DD341006A1243 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C8578284DD341006A1243 /* Repository.swift */; };
 		073C857B284DD5E7006A1243 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C857A284DD5E7006A1243 /* APIClient.swift */; };
 		073C857D284DD620006A1243 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C857C284DD620006A1243 /* APIError.swift */; };
+		073C857F284EFC32006A1243 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073C857E284EFC32006A1243 /* WebViewController.swift */; };
 		BD44D97F059979358EDD10B0 /* Pods_Practice_Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C831A7D688C8C954E4542BE2 /* Pods_Practice_Alamofire.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		073C8578284DD341006A1243 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		073C857A284DD5E7006A1243 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		073C857C284DD620006A1243 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		073C857E284EFC32006A1243 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		958CEE6783DD4D33DCB74DF5 /* Pods-Practice-Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practice-Alamofire.release.xcconfig"; path = "Target Support Files/Pods-Practice-Alamofire/Pods-Practice-Alamofire.release.xcconfig"; sourceTree = "<group>"; };
 		C831A7D688C8C954E4542BE2 /* Pods_Practice_Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Practice_Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0109963413D01BEC57E5088 /* Pods-Practice-Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Practice-Alamofire.debug.xcconfig"; path = "Target Support Files/Pods-Practice-Alamofire/Pods-Practice-Alamofire.debug.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				073C8560284DC147006A1243 /* AppDelegate.swift */,
 				073C8562284DC147006A1243 /* SceneDelegate.swift */,
 				073C8564284DC147006A1243 /* ViewController.swift */,
+				073C857E284EFC32006A1243 /* WebViewController.swift */,
 				073C8578284DD341006A1243 /* Repository.swift */,
 				073C857A284DD5E7006A1243 /* APIClient.swift */,
 				073C857C284DD620006A1243 /* APIError.swift */,
@@ -229,6 +232,7 @@
 				073C8563284DC147006A1243 /* SceneDelegate.swift in Sources */,
 				073C857B284DD5E7006A1243 /* APIClient.swift in Sources */,
 				073C857D284DD620006A1243 /* APIError.swift in Sources */,
+				073C857F284EFC32006A1243 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
