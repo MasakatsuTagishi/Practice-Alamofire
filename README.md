@@ -15,11 +15,13 @@ https://user-images.githubusercontent.com/83049586/172304446-cb4129b8-a834-4e1f-
 2. GitHubAPIでレポジトリーを検索し、結果を一覧表示する。
 3. Cellをタップすると、GitHubのレポジトリーにアクセスする。
 ## ハマりポイント
-- ネストした構造体(Repository型)をCodingKeyに準拠させる方法がわからず、時間を消費した。  
+- **ネストした構造体(Repository型)をCodingKeyに準拠させる方法がわからず、時間を消費した。**  
 → ネットで調べ、それぞれの構造体をCodingKeyに準拠させることで解決。
-- TableViewCellのオートレイアウトの制約が煩雑になっている。  
+
+- **TableViewCellのオートレイアウトの制約が煩雑になっている。**  
 後日学習する。[Understanding Auto Layout](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/index.html)
-- tableViewに結果の一覧表示が反映されず、時間を消費した。  
+
+- **tableViewに結果の一覧表示が反映されず、時間を消費した。**  
   ```swift
   tableView.dataSource = self
   ```  
